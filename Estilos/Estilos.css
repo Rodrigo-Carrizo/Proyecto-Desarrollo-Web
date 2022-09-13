@@ -37,6 +37,7 @@ body{
 }
 header{
     background-color: #000000;
+    background-image: linear-gradient(to right, red, yellow);
 }
 
 .cabeza__titulo{
@@ -47,6 +48,7 @@ header{
         justify-content: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 30px;
+        
 }
 
 .cabeza__texto{
@@ -56,6 +58,9 @@ header{
     background-color: #3f3f3f;
     padding: 5px;
     justify-items: stretch;
+    background-image: linear-gradient(to left,#000000),#ffffff;
+
+    
 
    
 }
