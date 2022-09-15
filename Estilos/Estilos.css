@@ -37,7 +37,7 @@ body{
 }
 header{
     background-color: #000000;
-    background-image: linear-gradient(to right, red, yellow);
+    background-image: linear-gradient(to right, #000000, #123009);
 }
 
 .cabeza__titulo{
@@ -58,7 +58,7 @@ header{
     background-color: #3f3f3f;
     padding: 5px;
     justify-items: stretch;
-    background-image: linear-gradient(to left,#000000),#ffffff;
+    background-image: linear-gradient(to left,#161616,#3f3f3f,#161616);
 
     
 
@@ -72,6 +72,8 @@ header{
     padding: 5px;
     border-radius: 5px;
     text-align: center;
+   
+
  }
 
 
@@ -82,10 +84,23 @@ header{
 
 .fotos{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: minmax(10px, auto);
-    column-gap: 100px;
-   
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(10px, auto); 
+    column-gap: 200opx;
+
+}
+
+.imagen {
+    margin: 10px;
+    padding: 10px;
+    transition:all 1s;
+    
+}
+
+.imagen:hover{
+    margin: 15px;
+    padding: 15px;
+
 }
 
 
@@ -121,6 +136,7 @@ th, td{
 .pies__texto{
     background-color: #000000;
     color: #f0f8ff;
+    background-image: linear-gradient(to right, #000000, #123009);
 }
 
 .grid {
@@ -129,7 +145,7 @@ th, td{
     grid-template-rows: minmax(100px, auto);
     column-gap: 100px;
     color: #f0f8ff;
-    text-align: center;
+    
     
   
    
@@ -139,6 +155,16 @@ th, td{
 .bordes{
     border: 5px solid;
     font-size: 20px;
+    background-color: #000000;
+    margin: 10px;
+    padding: 0px;
+    transition: all 1s;
+
+}
+
+.bordes:hover {
+    margin: 0px;
+    padding: 10px;
 
 }
 
