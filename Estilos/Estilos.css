@@ -35,7 +35,9 @@ body{
     font-family: 'Mada', sans-serif;
     
 }
-header{
+
+
+#fondo{
     background-color: #000000;
     background-image: linear-gradient(to right, #000000, #123009);
 }
@@ -82,26 +84,44 @@ header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.fotos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(10px, auto); 
-    column-gap: 200opx;
-
-}
-
-.imagen {
+#imagen {
     margin: 10px;
     padding: 10px;
     transition:all 1s;
-    
+    text-align: center;
 }
 
-.imagen:hover{
+#imagen:hover{
     margin: 15px;
     padding: 15px;
+    text-align: center;
+}
+
+#galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    column-gap: 25px;
+    row-gap: 25px;
+    
+  
+}
+
+#selecciones{
+    transition:all 1s;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: #000000;
+   
 
 }
+
+#selecciones:hover{
+    transform: scale(1.1);
+
+
+}
+
 
 
 .cuadrila{
