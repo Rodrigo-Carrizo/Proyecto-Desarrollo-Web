@@ -1,210 +1,123 @@
-body{
-    background-image: url(../Imagenes/Inicio.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Mada', sans-serif;
-
-
+body {
+  background-image: url(../Imagenes/Inicio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Mada", sans-serif;
 }
 
-.Contacto{
-    background-image: url(../Imagenes/Contacto.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Mada', sans-serif;
+.Contacto {
+  background-image: url(../Imagenes/Contacto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Mada", sans-serif;
 }
 
-.Galeria{
-    background-image: url(../Imagenes/Galeria.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Mada', sans-serif;
+.Galeria {
+  background-image: url(../Imagenes/Galeria.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Mada", sans-serif;
 }
 
-.Informacion{
-    background-image: url(../Imagenes/Informacion.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Mada', sans-serif;
+.Informacion {
+  background-image: url(../Imagenes/Informacion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Mada", sans-serif;
 }
 
-.Nosotros{
-    background-image: url(../Imagenes/Nosotros.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Mada', sans-serif;
-    
+.Nosotros {
+  background-image: url(../Imagenes/Nosotros.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Mada", sans-serif;
 }
 
-
-#fondo{
-    background-color: #000000;
-    background-image: linear-gradient(to right, #000000, #123009);
+#fondo {
+  background-image: linear-gradient(to right, #000000, #123009);
 }
 
-.cabeza__titulo{
-        color: #f0f8ff;
-        -webkit-text-stroke: 1px #000000;
-        grid-area: cabeza;
-        display: flex;
-        justify-content: center;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 30px;
-        
+.cabeza__titulo {
+  color: #f0f8ff;
+  -webkit-text-stroke: 1px #000000;
+  grid-area: cabeza;
+  display: flex;
+  justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
 }
 
-.cabeza__texto{
-    grid-area: cabeza;
-    display: flex;
-    justify-content: space-between;
-    background-color: #3f3f3f;
-    padding: 5px;
-    justify-items: stretch;
-    background-image: linear-gradient(to left,#161616,#3f3f3f,#161616);
-
-    
-
-   
+.cabeza__texto {
+  grid-area: cabeza;
+  display: flex;
+  justify-content: space-between;
+  background-color: #3f3f3f;
+  padding: 5px;
+  justify-items: stretch;
+  background-image: linear-gradient(to right, #000000, #123009);
 }
-.cabeza__texto li{
-    display: flex;
-    color: #f0f8ff;
-    margin-left: 0px;
-    background-color: #5c5c5c;
-    padding: 5px;
-    border-radius: 5px;
-    text-align: center;
-   
+.cabeza__texto li {
+  display: flex;
+  color: #f0f8ff;
+  margin-left: 0px;
+  background-color: #5c5c5c;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
 
- }
-
-
-.cabeza__formulario{
-    color: #000000;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.cabeza__formulario {
+  color: #000000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 #imagen {
-    margin: 10px;
-    padding: 10px;
-    transition:all 1s;
-    text-align: center;
+  margin: 10px;
+  padding: 10px;
+  transition: all 1s;
+  text-align: center;
 }
 
-#imagen:hover{
-    margin: 15px;
-    padding: 15px;
-    text-align: center;
+#imagen:hover {
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
 }
 
-#galeria{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(100px, auto);
-    column-gap: 25px;
-    row-gap: 25px;
-    
-  
+#galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(100px, auto);
+  -moz-column-gap: 25px;
+  column-gap: 25px;
+  row-gap: 25px;
 }
 
-#selecciones{
-    transition:all 1s;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-color: #000000;
-   
-
+#selecciones {
+  transition: all 1s;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-color: #000000;
 }
 
-#selecciones:hover{
-    transform: scale(1.1);
-
-
+#selecciones:hover {
+  transform: scale(1.1);
 }
 
-
-
-.cuadrila{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 150px auto;
-    width: 600px;
+table {
+  background-color: #f0f8ff;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  text-align: center;
+}
+table th, table td {
+  border: solid 1px #000000;
+  padding: 20px;
 }
 
-table{
-    background-color: #f0f8ff;
-    width: 100%;
-    text-align: left;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-th, td{
-    border: solid 1px #000000;
-    padding: 20px;
-}
-
-.estadistica{
-    background-color: #000000;
-    color: #f0f8ff;
-
-}
-
-
-
-
-
-.pies__texto{
-    background-color: #000000;
-    color: #f0f8ff;
-    background-image: linear-gradient(to right, #000000, #123009);
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: minmax(100px, auto);
-    column-gap: 100px;
-    color: #f0f8ff;
-    
-    
-  
-   
-   
-}
-
-.bordes{
-    border: 5px solid;
-    font-size: 20px;
-    background-color: #000000;
-    margin: 10px;
-    padding: 0px;
-    transition: all 1s;
-
-}
-
-.bordes:hover {
-    margin: 0px;
-    padding: 10px;
-
-}
-
-
-@media screen and (max-width: 480px) {
-    .grid {
-        width: 95%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
-        grid-template-rows: 200px;
-        row-gap: 0px;
-        column-gap: 0px;
-    }
-}
-
-@media  screen and (min-width: 480px) and (max-width:1200px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-        height: 100vh;
-        row-gap: 0px;
-        column-gap: 0px;
-    }
-}
+.pies__texto {
+  background-color: #000000;
+  color: #f0f8ff;
+  background-image: linear-gradient(to right, #000000, #123009);
+}/*# sourceMappingURL=Estilos.css.map */
