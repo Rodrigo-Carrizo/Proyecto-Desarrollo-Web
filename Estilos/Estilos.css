@@ -54,9 +54,8 @@ body {
   background-color: #3f3f3f;
   padding: 5px;
   justify-items: stretch;
-  background-image: linear-gradient(to left, #161616, #3f3f3f, #161616);
+  background-image: linear-gradient(to right, #000000, #123009);
 }
-
 .cabeza__texto li {
   display: flex;
   color: #f0f8ff;
@@ -90,7 +89,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: minmax(100px, auto);
   -moz-column-gap: 25px;
-       column-gap: 25px;
+  column-gap: 25px;
   row-gap: 25px;
 }
 
@@ -105,12 +104,6 @@ body {
   transform: scale(1.1);
 }
 
-.cuadrila {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin: 150px auto;
-  width: 600px;
-}
-
 table {
   background-color: #f0f8ff;
   width: 100%;
@@ -118,63 +111,13 @@ table {
   border-collapse: collapse;
   text-align: center;
 }
-
-th, td {
+table th, table td {
   border: solid 1px #000000;
   padding: 20px;
-}
-
-.estadistica {
-  background-color: #000000;
-  color: #f0f8ff;
 }
 
 .pies__texto {
   background-color: #000000;
   color: #f0f8ff;
   background-image: linear-gradient(to right, #000000, #123009);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: minmax(100px, auto);
-  -moz-column-gap: 100px;
-       column-gap: 100px;
-  color: #f0f8ff;
-}
-
-.bordes {
-  border: 5px solid;
-  font-size: 20px;
-  background-color: #000000;
-  margin: 10px;
-  padding: 0px;
-  transition: all 1s;
-}
-
-.bordes:hover {
-  margin: 0px;
-  padding: 10px;
-}
-
-@media screen and (max-width: 480px) {
-  .grid {
-    width: 95%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-    grid-template-rows: 200px;
-    row-gap: 0px;
-    -moz-column-gap: 0px;
-         column-gap: 0px;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 1200px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-    height: 100vh;
-    row-gap: 0px;
-    -moz-column-gap: 0px;
-         column-gap: 0px;
-  }
 }/*# sourceMappingURL=Estilos.css.map */
