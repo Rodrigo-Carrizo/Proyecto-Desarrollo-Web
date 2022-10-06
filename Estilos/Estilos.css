@@ -37,33 +37,14 @@ body {
   background-image: linear-gradient(to right, #000000, #123009);
 }
 
-.cabeza__titulo {
+#letras__titulo {
   color: #f0f8ff;
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 2px #000000;
   grid-area: cabeza;
   display: flex;
-  justify-content: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 30px;
-}
-
-.cabeza__texto {
-  grid-area: cabeza;
-  display: flex;
-  justify-content: space-between;
-  background-color: #3f3f3f;
-  padding: 5px;
-  justify-items: stretch;
-  background-image: linear-gradient(to right, #000000, #123009);
-}
-.cabeza__texto li {
-  display: flex;
-  color: #f0f8ff;
-  margin-left: 0px;
-  background-color: #5c5c5c;
-  padding: 5px;
-  border-radius: 5px;
-  text-align: center;
+  font-size: 50px;
+  right: 20;
 }
 
 .cabeza__formulario {
@@ -84,55 +65,158 @@ body {
   text-align: center;
 }
 
-.elemento {
-  width: 100%;
-}
-
-.elemento img {
-  width: 100%;
-}
-
-.galeria {
-  width: 100%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: 15px;
-       column-gap: 15px;
-  row-gap: 15px;
-  cursor: pointer;
-}
-
-#selecciones {
-  transition: all 1s;
-}
-
-#selecciones:hover {
-  transform: scale(1.1);
-}
-
 table {
   width: 100%;
   text-align: center;
 }
 
-.pies__texto {
-  color: #f0f8ff;
-  background-image: linear-gradient(to right, #000000, #123009);
+.pie-pagina {
+  width: 100%;
+  background-color: #000000;
 }
 
-@media (min-width: 250px) {
-  .galeria {
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin-right: 10px;
+  background-color: #000000;
+}
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
   }
 }
-@media (min-width: 700px) {
-  .galeria {
-    grid-template-columns: repeat(2, 1fr);
+.linea {
+  border-top: 5px solid #000000;
+  margin-bottom: 40px;
+}
+
+.contenedor-imagenes {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px;
+}
+
+.contenedor-imagenes .imagen {
+  width: 32%;
+  position: relative;
+  height: 225px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.658);
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.overlay h2 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay {
+  height: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .contenedor-imagenes {
+    width: 95%;
+  }
+  .contenedor-imagenes .imagen {
+    width: 50%;
   }
 }
-@media (min-width: 1000px) {
-  .galeria {
-    grid-template-columns: repeat(3, 1fr);
+@media screen and (max-width: 700px) {
+  .contenedor-imagenes {
+    width: 90%;
   }
+  .contenedor-imagenes .imagen {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 22px;
+  }
+  .contenedor-imagenes {
+    width: 98%;
+  }
+  .contenedor-imagenes .imagen {
+    width: 110%;
+  }
+}
+.boton {
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.boton {
+  background-color: #ffffff;
+  border-bottom: 3px #666666;
+  color: #000000;
 }/*# sourceMappingURL=Estilos.css.map */
