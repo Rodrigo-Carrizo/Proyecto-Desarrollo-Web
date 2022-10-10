@@ -29,10 +29,10 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  <a class="nav-link" href="./Nosotros.html">Nosotros</a>
-                  <a class="nav-link" href="./Estadisticas.html">Estadisticas</a>
-                  <a class="nav-link" href="./Galeria.html">Galeria</a>
-                  <a class="nav-link" href="./Informacion.html">Informacion</a>
+              <a class="nav-link" href="./Galeria.html">Galeria</a>
+              <a class="nav-link" href="./Contacto.html">Contacto</a>
+              <a class="nav-link" href="./Informacion.html">Informacion</a>
+              <a class="nav-link" href="./Campeonatos.html">Campeonatos</a>
             </div>
           </div>
         </div>
@@ -40,62 +40,35 @@
    </header> 
 
 
-  <article class="cabeza__formulario">
- 
-    <form>
-      <fieldset>
-        <legend>Datos Personales</legend>
-        <label for="nombre">Ingresa tu Nombre</label>
-        <br />
-        <input id="nombre" type="text" />
-        <br /> 
-        <label for="apellido">Ingresa tu Apellido</label>
-        <br /> 
-        <input id="apellido" type="text" />
-        <br /> 
-        <label for="documento">Ingresa tu Documento</label>
-        <br /> 
-        <input id="documento" type="number" />
-        <br /> 
-        <label for="email">Ingresa tu Email</label>
-        <br /> 
-        <input id="email" type="email" />
-     
-      </fieldset>
-<fieldset>
-  <Legend>Informacion Adicional</Legend>
-  <label for="pais" class="boton">Selecciona tu Pais</label>
-  <br /> 
-  <select>
-    <option>Argentina</option> 
-    <option>Brasil</option>
-    <option>Bolivia</option>
-    <option>Chile</option>
-    <option>Colombia</option>
-    <option>Ecuador</option>
-    <option>Paraguay</option>
-    <option>Peru</option>
-    <option>Uruguay</option>
-    <option>Venezuela</option>
-  </select> 
-  <br /> 
-  <label for="Terminos">Acepto los Terminos y Condicones</label>
-  <input type="checkbox" />
-  <br /> 
-  <label for="informacion">Deseo Recibir Informacion por mi Email</label>
-  <input type="checkbox" />
-  <br /> 
-  <label for="comentarios">Ingrese un Comentario</label>
-  <br /> 
-  <textarea></textarea>
-  <br /> 
-  <button class="boton">Enviar</button>
-  <button class="boton">Restablecer</button>
-   
-</fieldset>
+   <form action="registro">
+    <div class="form">
+        <h1>Datos personales</h1>
+        <div>
+          <label>Nombre</label>
+          <input type="text" name="nombre">
+        </div>
+        <div>
+          <label>Apellido</label>
+          <input type="text" name="apellido">
+        </div>
+        <div>
+          <label>Documento</label>
+          <input type="number" name="documento">
+        </div>
+        <div>
+          <label>Correo Electronico</label>
+          <input type="text" name="email">
+        </div>
+        <div>
+          <label>Escriba su Comentario</label>
+          <textarea name="mensaje"></textarea>
+        </div>
+        <input type="button" value="ENVIAR" id="boton">
+    </div>
 </form>
-  
-</article>
+
+
+
 
 <footer class="pie-pagina">
   <div class="grupo-1">
