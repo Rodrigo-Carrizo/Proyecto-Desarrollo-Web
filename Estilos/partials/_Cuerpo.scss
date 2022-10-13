@@ -79,23 +79,6 @@ label {
   color: #ffffff;
 }
 
-@media screen and (max-width:420px){
-  form {
-      width: 100%;
-  }
-  label {
-    font-size: 25px;
-  }
-}
-
-@media screen and (max-width:700px){
-  form {
-      width: 100%;
-  }
-}
-
-
-
 .contenedor-foto {
   display:flex;
   width: 85%;
@@ -132,7 +115,6 @@ label {
 
 .sombra h2 {
   color: #fff;
-  font-weight: 300;
   font-size:30px;
   position: absolute;
   top: 50%;
@@ -146,6 +128,33 @@ label {
   cursor: pointer;
 }
 
+@media screen and (max-width:420px){
+  form {
+      width: 100%;
+  }
+  label {
+    font-size: 25px;
+  }
+  .contenedor-foto{
+    width: 80%;
+  }
+  .contenedor-foto .foto{
+    width: 210%;
+  }
+}
+
+@media screen and (max-width:700px){
+  form {
+      width: 100%;
+  }
+  .contenedor-foto{
+    width: 90%;
+  }
+  .contenedor-foto .foto{
+    width: 75%;
+  }
+}
+
 @media screen and (max-width:1000px) {
   .contenedor-foto {
       width: 95%;
@@ -155,23 +164,5 @@ label {
   }
 }
 
-@media screen and (max-width:700px){
-  .contenedor-foto{
-      width: 90%;
-  }
-  .contenedor-foto .foto{
-      width: 75%;
-  }
-}
 
-@media screen and (max-width:420px){
-  h1{
-      font-size:22px;
-  }
-  .contenedor-foto{
-      width: 80%;
-  }
-  .contenedor-foto .foto{
-      width: 210%;
-  }
-}
+
